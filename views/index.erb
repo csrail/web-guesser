@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Web Guesser</title>
 </head>
 <body>
   <p>
-    "The SECRET number is <%= number %>"
+    The ANSWER is <%= answer %>
   </p>
+  <p>
+    <%= response %>
+  </p>
+  <form>
+    <input type="text" name="guess">
+    <input type="submit" value="Guess!">
+  </form>
 </body>
 </html>
