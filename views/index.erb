@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Guesser</title>
+  
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/media_query.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  
 </head>
+
 <body>
-  <p>
-    The ANSWER is <%= answer %>
-  </p>
-  <p>
-    <%= response %>
-  </p>
-  <form>
-    <input type="text" name="guess">
-    <input type="submit" value="Guess!">
-  </form>
+  <div class="media-query__div"></div>
+  
+  
+  <section class="feature__section">
+    <h1>The Guessing Game</h1>
+    
+    <article class="game__article">
+      <p><%= "The ANSWER is #{answer}" %></p>    
+  
+      <p class="guesses-left__paragraph paragraph--inline-block">Guesses Remaining: <%= guesses_remaining %></p>
+  
+      <p class="response__paragraph <%= color_response %>">
+        <%= response %>
+      </p>
+      
+      <p><%= message %></p>
+    </article>
+    
+    <article class="game__article game__article--form">
+      <form class="guess-box__form">
+        <div class="form-spacer__div"></div>
+        <input class="guess__input--text" type="text" name="guess" placeholder="Try a number from 1 to 100">
+        <input class="guess__input--button" type="submit" value="Guess!">
+      </form>
+    </article>
+  </section>
 </body>
+
 </html>

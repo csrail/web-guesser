@@ -1,0 +1,112 @@
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html, body {
+  height: 100%;
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1.428em;
+}
+
+p {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+h1 {
+  margin-top: 1em;
+  font-size: 2em;
+  text-align: center;
+}
+
+input {
+  margin: auto;
+}
+
+
+/* Feature Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.feature__section {
+  width: 320px;
+  height: 60%;
+  position: relative;
+  background-color: #E7C3E7;
+  margin: auto;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.game__article {
+  background-color: #f1f3ce;
+  width: 72%;
+  margin: auto;
+  margin-top: 2em;
+  text-align: center;
+}
+
+
+/* Response Paragraph
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.paragraph--inline-block {
+  display: inline-block;
+}
+
+.guesses-left__paragraph {
+  clear: both;
+}
+
+.response__paragraph {
+  
+}
+
+.response__paragraph--correct {
+  background-color: #ada;
+}
+
+.response__paragraph--near {
+  background-color: #c4dfe6;
+}
+
+.response__paragraph--far {
+  background-color: #f0810f;
+}
+
+
+/* Guessbox Form
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.game__article--form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 2em;
+}
+
+.guess-box__form {
+  display: block;
+  position: relative;
+  background-color: #556dac;
+  padding-bottom: 20px;
+}
+
+.form-spacer__div {
+  height: 20px;
+}
+
+.guess__input--text {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  margin: auto;
+  
+  padding: 10px;
+  border: 1px solid #555;
+}
+
+.guess__input--button {
+  margin-top: 20px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #555;
+  background-color: 
+  display: block;
+}
