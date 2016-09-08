@@ -16,12 +16,8 @@ get '/' do
                               :message              => @message}
 end
 
-
-
-
 @@random_number = rand(100) + 1
-@@guesses_remaining = 9
-
+@@guesses_remaining = 10
 
 def evaluate_guesses(player_guess)
   if player_guess == @@random_number
@@ -36,7 +32,7 @@ def evaluate_guesses(player_guess)
 end
 
 def reset_game
-  @@guesses_remaining = 5
+  @@guesses_remaining = 9
   @@random_number = rand(100) + 1
 end
 

@@ -104,17 +104,18 @@ input {
 
 
 .game__article {
-  font-family: vcr;
+  height: 240px;
+  width: 80%;
   background-color: #f1f3ce;
   border: 3px groove #333;
   border-left: 3px solid #333;
   border-right: 3px solid #333;
-  height: 240px;
-  width: 80%;
   position: relative;
   overflow: none;
   margin: auto;
   text-align: center;
+  font-family: vcr;
+  color: #3f3f3f;
 }
 
 .game-screen-spacer__div {
@@ -221,6 +222,7 @@ input {
   background-color: #444;
   color: #ddd;
   margin-left: 20px;
+  box-shadow: 2px 0px 6px #666;
 }
 
 .guess__input--button {
@@ -237,6 +239,7 @@ input {
 
 .guess__input--button:hover {
   background-color: #A43969;
+  box-shadow: 6px 0px 6px pink;
 }
 
 .button--extra {
@@ -250,10 +253,12 @@ input {
   background-color: #7C0643;
   margin-top: -10px;
   margin-right: 27px;
+  
 }
 
 .button--extra:hover {
   background-color: #A43969;
+  box-shadow: 6px 0px 6px pink;
 }
 
 .guess__label {
