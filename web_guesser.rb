@@ -20,7 +20,7 @@ end
 
 
 @@random_number = rand(100) + 1
-@@guesses_remaining = 6
+@@guesses_remaining = 9
 
 
 def evaluate_guesses(player_guess)

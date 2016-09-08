@@ -18,26 +18,44 @@
   
   
   <section class="feature__section">
-    <h1>The Guessing Game</h1>
-    
-    <article class="game__article">
-      <p><%= "The ANSWER is #{answer}" %></p>    
-  
-      <p class="guesses-left__paragraph paragraph--inline-block">Guesses Remaining: <%= guesses_remaining %></p>
-  
-      <p class="response__paragraph <%= color_response %>">
-        <%= response %>
-      </p>
+    <div class="wrapper__div--feature-section">
+      <div class="wrapper__div--game">
+        <div class="message__div--stereo-sound">
+          <div class="line__div--red"></div>
+          <div class="line__div--blue"></div>
+          <div class="message__div--matrix">DOT MATRIX WITH SOUND STEREO</div>
+        </div>
+        <article class="game__article">
+          <p class="guesses-left__paragraph paragraph--inline-block">Guesses Remaining: <%= guesses_remaining %></p>
+          <!-- <p><%= "The ANSWER is #{answer}" %></p> -->
+          
+          <p class="reset-message__paragraph"><%= message %></p>
+          
+          <div class="response-spacer__div">
+            <p class="response__paragraph <%= color_response %>">
+              <%= response %>
+            </p>
+          </div>
+          
+        <div class="game-screen-spacer__div"></div>
+        </article>
+      </div>
       
-      <p><%= message %></p>
-    </article>
+      
+      <h2>cs-rail <span class="game-name__span">WEB GUESSER</span></h2><span class="tm__span">TM</span>
+    </div>
     
-    <article class="game__article game__article--form">
+    
+    <article class="game__article--form">
       <form class="guess-box__form">
         <div class="form-spacer__div"></div>
-        <input class="guess__input--text" type="text" name="guess" placeholder="Try a number from 1 to 100">
-        <input class="guess__input--button" type="submit" value="Guess!">
+        <input autofocus class="guess__input--text" type="text" name="guess" placeholder="  ? ">
+        <input class="guess__input--button" type="submit" value="">
+        <label class="guess__label" for="submit">Guess!</label>
+        <button class="button--extra" for="submit"></button>
       </form>
+      
+      <div class="line__div--indigo"></div>
     </article>
   </section>
 </body>
